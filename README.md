@@ -1,6 +1,6 @@
 # ANSI C++ Tridiagonal Matrix
 
- Yet another C++ implementation of the [Tridiagonal Matrix](https://en.wikipedia.org/wiki/Tridiagonal_matrix) manipulation. This ANSI C++ class provides simple and efficient methods for tridiagonal inversion and tridiagonal system of equations ([Thomas algorithm](https://en.wikipedia.org/wiki/Tridiagonal_matrix_algorithm)). 
+ Yet another C++ implementation for [Tridiagonal Matrix](https://en.wikipedia.org/wiki/Tridiagonal_matrix) manipulation. This ANSI C++ class provides simple and efficient methods for tridiagonal inversion and tridiagonal system of equations ([Thomas algorithm](https://en.wikipedia.org/wiki/Tridiagonal_matrix_algorithm)). 
  
 ## Usage
 
@@ -23,14 +23,16 @@ The returned value is a *n*&#215;*n* array.
 
 A tridiagonal systems of equations can be solved with the following methods:
 
+<img src="tridiagonal.png" alt="drawing" width="400"/>
+
 ```C++
 float *system(float *y);
 static void inline system(float *y, float *x, unsigned int n, float lower, float diagonal, float upper);
 ```
 
-The first method will use the matrix created by the constructor. The input value are given by the array *y*, while the calculated solutions are returned in the array *x*, allocated internally. The values of *y* and the original matrix are preserved.
+The first method will use the matrix created by the constructor. The input values are given by the array *y*, while the calculated solutions are returned in the array *x*, allocated internally. The values of *y* and the original matrix are preserved.
 
-The second (static) method solves the system with the values given by the parameters. This method does not preserve the values of *y*.
+The second (static) method solves the system with the values given by the parameters. The matrix values *a<sub>n<sub>*, *b<sub>n<sub>* and *c<sub>n<sub>* are given by *diagonal*, *upper* and *lower*, respectively. This method does not preserve the values of *y*.
 
 The destructor method delete all allocated arrays, including the ones which pointers have been returned by the `inverse` and `system` methods.  
 
