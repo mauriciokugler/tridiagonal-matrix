@@ -1,4 +1,4 @@
-# ANSI C++ Tridiagonal Matrix
+# C++ Tridiagonal Matrix
 
  Yet another C++ implementation for [Tridiagonal Matrix](https://en.wikipedia.org/wiki/Tridiagonal_matrix) manipulation. This ANSI C++ class provides simple and efficient methods for tridiagonal inversion and tridiagonal system of equations ([Thomas algorithm](https://en.wikipedia.org/wiki/Tridiagonal_matrix_algorithm)). 
  
