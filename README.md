@@ -71,7 +71,7 @@ int main(void)
 ```TeX
 @MISC{Kugler2019,
   author = "Mauricio Kugler",
-  title = "ANSI C++ Tridiagonal Matrix",
+  title = "C++ Tridiagonal Matrix",
   year = "2019",
   url = "https://github.com/mauriciokugler/tridiagonal-matrix",
   note = "Version 1.0.0"
