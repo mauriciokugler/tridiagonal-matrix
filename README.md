@@ -23,7 +23,7 @@ The returned value is a *n*&#215;*n* array.
 
 A tridiagonal systems of equations can be solved with the following methods:
 
-<img src="tridiagonal.png" alt="drawing" width="400"/>
+<img src="tridiagonal.png" alt="tridiagonal system" width=400/>
 
 ```C++
 float *system(float *y);
